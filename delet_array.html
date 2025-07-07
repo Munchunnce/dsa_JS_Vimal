@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Delete Element</title>
+    <script>
+        // let data = [12, 34, 21, 4, 23];
+        // let position = 3;
+
+        // console.log('befor Delete', data);
+
+        // for(let i = position; i < data.length - 1; i++){
+        //     data[i] = data[i + 1];
+        // }
+        // data.length = data.length - 1;
+        // console.log('after delete', data);
+        function deleteItem(){
+            let data = [12, 34, 21, 4, 23];
+            console.log('befor delete',data);
+            let position = parseInt(document.querySelector('#position').value);
+            for(let i = position; i < data.length - 1; i++){
+                data[i] = data[i + 1];
+            }
+            data.length = data.length - 1;
+            console.log('after delete',data);
+        }
+    </script>
+</head>
+<body>
+    <input id="position" type="text" placeholder="Enter position">
+    <button onclick="deleteItem()">Delete Item</button>
+</body>
+</html>
