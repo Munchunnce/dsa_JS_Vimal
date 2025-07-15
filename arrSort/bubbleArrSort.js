@@ -6,8 +6,8 @@ for(let i = 0; i < data.length; i++){
             let temp = data[j];
             data[j] = data[j + 1];
             data[j + 1] = temp;
-        }
-    }
+        };
+    };
 };
 
 console.log(data);
